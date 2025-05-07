@@ -1,12 +1,43 @@
-# React + Vite
+# 📈 Stock Sentiment Analysis App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack application that helps users analyze real-time stock news sentiment using FinBERT and get automated Buy/Sell/Hold recommendations. Users can create accounts, maintain a wishlist of stocks, and receive updated suggestions.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 User Authentication (JWT-based)
+- 📊 Sentiment Analysis using FinBERT
+- 📰 News Fetching via NewsAPI
+- 💡 Stock Suggestions: Strong Buy / Buy / Hold / Sell / Strong Sell
+- ❤️ Wishlist Management (Add/Delete stocks)
+- 🧠 Smart aggregation from multiple articles
+- 🌐 Built with React.js, FastAPI/Flask (Python), SQLite
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧰 Tech Stack
+
+### Frontend
+- [React.js](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [Axios](https://axios-http.com/)
+- [Vite](https://vitejs.dev/) (React scaffolding)
+- TailwindCSS (for styling)
+
+### Backend
+- Python 3
+- [Transformers (FinBERT)](https://huggingface.co/ProsusAI/finbert)
+- [NewsAPI](https://newsapi.org/)
+- SQLite (for data storage)
+- JWT (for authentication)
+- FastAPI or Flask (depending on what your friend used)
+
+---
+
+## 🧑‍💻 Getting Started
+
+### 🔹 Backend Setup
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/yourusername/stock-sentiment-app.git
+   cd backend
